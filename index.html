@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Of Games</title>
+    <link rel="stylesheet" href="C:/Games/New folder/styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .img-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Posisikan img di belakang konten */
+        }
+
+        .wrapper, .container, .film-container {
+            position: relative;
+            z-index: 1; /* Posisikan konten di depan video */
+            color: white;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparansi untuk membuat teks lebih terlihat */
+        }
+
+        .container, .film-container {
+            margin-top: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparansi untuk membuat teks lebih terlihat */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+            .container h1 {
+                margin-bottom: 20px;
+            }
+
+            .container audio {
+                margin-bottom: 20px;
+            }
+
+        .hidden {
+            display: none;
+        }
+
+        .film-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .film {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .ocean {
+            position:absolute;
+            border-radius: 10px;
+            margin: 20px;
+            top: 100px;
+            left: 37%;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+            .film img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .film h2 {
+                font-size: 18px;
+                margin: 10px 0 5px;
+            }
+
+            .film p {
+                font-size: 14px;
+            }
+        .audio-container {
+            position: absolute;
+            resize;100px;
+            top: 20px;
+            left: 90%;
+            transform: translateX(-50%);
+            text-align: center; 
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .title-container h1 {
+            font-family: 'Copperplate Gothic', 'Copperplate Gothic';
+            -webkit-text-stroke: 3px black;
+            font-size: 5em;
+            color: white;
+            margin: 0;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.0); /* Transparansi untuk membuat teks lebih terlihat */
+            padding: 20px;
+            border-radius: 1px;
+        }
+
+    </style>
+
+</head>
+
+<link rel="icon"
+      href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png"
+      type="image/x-icon" />
+
+<body>
+
+    <div class="img-background">
+        <img src="C:/Games/New folder/image/video.jpg" type="image/jpg"
+             tex-stroke=1px rgb(0, 0, 0)>
+    </div>
+
+    <div class="ocean">
+        <img src="C:/Games/New folder/image/baner.png" type="image/jpg"
+             tex-stroke=1px rgb(0, 0, 0)>
+    </div>
+
+    <div class="title-container">
+        <h1>Welcome tO </h1>
+    </div>
+
+    <div class="film-container">
+        <div class="film">
+            <img src="C:/Games/New folder/image/poster2.jpg" alt="Film 1">
+            <h1>Naruto 4</h1>
+
+
+            <img src="C:/Games/New folder/image/poster5.png" alt="Film 6">
+            <h1>Downhill Domination</h1>
+
+
+        </div>
+    </div>
+
+    <div class="film-container">
+        <div class="film">
+            <img src="C:/Games/New folder/image/poster4.jpg" alt="Film 1">
+            <h1>Bully</h1>
+
+            <img src="C:/Games/New folder/image/poster8.jpg" alt="Film 6">
+            <h1>Smack Down</h1>
+        </div>
+    </div>
+
+    <div class="film-container">
+        <div class="film">
+            <img src="C:/Games/New folder/image/poster57.jpg" alt="Film 1">
+            <h1>Urban R</h1>
+
+            <img src="C:/Games/New folder/image/gta.jpg" alt="Film 6">
+            <h1>GTA Sandreas </h1>
+        </div>
+    </div>
+
+    <div class="film-container">
+        <div class="film">
+            <img src="C:/Games/New folder/image/hand.jpg" alt="Film 1">
+            <h1>God Hand</h1>
+
+            <img src="C:/Games/New folder/image/gow.jpeg" alt="Film 6">
+            <h1>GOD OF WAR 2</h1>
+        </div>
+    </div>
+
+
+    <div class="audio-container">
+        <audio id="myAudio" controls autoplay
+            <source src="C:/Games/New folder/song/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <font size="2px"> Theme Sound </font>
+        </p>
+
+    </div>
+
+
+
+    <script src="C:/Games/New folder/scipt/styles/script.js"></script>
+</body>
+</html>
